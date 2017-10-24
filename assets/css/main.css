@@ -1,0 +1,626 @@
+/*
+ * Author: Carlos Alvarez
+ * URL: http://alvarez.is
+ *
+ * Project Name: Bolt - Free Bootstrap 3 Theme
+ * Version: 1.0
+ * URL: http://blacktie.co
+ */
+ 
+/* FONTS */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400');
+@import url('https://fonts.googleapis.com/css?family=Jaldi:400,700');
+
+
+/* OVERALL ASPECT */
+
+body {
+  background-color: #ffffff;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #555;
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    
+    margin-top: 70px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Titles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 400;
+    color: #333;
+}
+
+
+/* Paragraph & Typographic */
+p {
+    line-height: 2;
+    margin-bottom: 25px;
+    font-family: 'Lato', sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.mt {
+	margin-top: 40px;
+}
+
+/* Links */
+a {
+    color: #f85c37;
+    word-wrap: break-word;
+
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover,
+a:focus {
+    color: #7b7b7b;
+    text-decoration: none;
+    outline: 0;
+}
+
+a:before,
+a:after {
+    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+    transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+/* Bootstrap Modifications */
+ hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+
+.navbar {
+	font-weight: 800;
+	font-size: 14px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #ffffff;
+}
+
+.navbar-default .navbar-nav > .active > a {
+	color: #ffffff;
+	background-color: #664fc9;
+    text-transform: uppercase;
+    padding: 15px 30px;
+}
+
+.navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #504485; 
+    color: #ffffff;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #666666;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: rgba(0,0,0,0.45);
+}
+
+.navbar-brand {
+	font-size: 60px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+    width: 26rem;
+}
+
+.btn-theme {
+	color: #ffffff;
+	background-color: #664fc9;
+	border-color: transparent;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Jaldi', sans-serif;
+}
+
+.btn-theme:hover, .btn-theme:focus {
+	color: #ffffff;
+	background-color: #504485;
+	border-color: transparent;
+}
+
+.btn {
+	padding: 10px 30px;
+	margin-bottom: 0;
+	font-size: 18px;
+	border: 5px solid transparent;
+	border-radius: 0px;
+}
+
+.lead {
+	letter-spacing: 1px;
+}
+
+#alert {
+    background-color: #ff4374;
+    text-align: center;
+    top: 8.1rem;
+    padding: 1rem 0;
+    border-bottom: none;
+    
+}
+
+#alert p {
+    color: #fff;
+    margin-bottom: 0;
+    display: inline-block;
+    
+}
+
+/* WRAP SECTIONS */
+
+/* sponsors */
+
+#sponsors {
+    padding: 2rem 0;
+    background: #664fc9;
+    text-align: center;
+}
+
+#adobe, #aiga {
+    width: 100%;
+    opacity: 0.65;
+}
+
+#adobe {
+    max-width: 125px;
+}
+
+#aiga {
+    max-width: 300px;
+}
+
+/* hello */
+#hello {
+	width: 100%;
+    margin-top: 12.1rem;
+}
+
+#hello img {
+    width: 100%;
+}
+
+#hello h1 {
+	font-size: 90px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	color: #202020;
+    text-transform: uppercase;
+}
+
+#hello h2 {
+	color: #202020;
+	font-weight: 400;
+    text-transform: uppercase;
+}
+
+#pg-title {
+    padding: 10rem 0;
+    margin-top: 12.1rem;
+}
+
+#pg-title h2 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 6rem;
+}
+
+.about-title {
+    background: url(../img/dlm_p1.jpg) 0 -300px no-repeat;  
+}
+
+.schedule-title {
+    background: url(../img/dlm_p2.jpg) 0 -300px no-repeat;
+}
+
+.sponsor-title {
+    background: url(../img/dlm_p3.jpg) 0 -300px no-repeat;
+}
+
+.about-title, .schedule-title, .sponsor-title {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#schedule {
+    padding: 8rem 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sched-item {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sched-item:last-child {
+    border-bottom: none;
+}
+
+.sched-item h3 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #664fc9;
+}
+
+.sched-item h4 {
+    text-transform: uppercase;
+    font-style: italic;
+    color: #202020;
+    font-size: 2rem;
+}
+
+.sched-item p {
+    margin-bottom: 0;
+    font-weight: 400;
+    color: #666;
+}
+
+.purple {
+    background: #664fc9;
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.purple h3 {
+	color: #fff;
+	font-weight: 400;
+	margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.purple p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.purple a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.more-info {
+    text-align: left;
+}
+
+/* Green */
+#green {
+	background-color: #ffffff;
+	padding: 6rem 0;
+	margin-bottom: 0px;
+}
+
+#green h3, #applications h3, #sponsors h3 {
+	color: #202020;
+	font-weight: 400;
+	margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sponsors h3 {
+    margin-bottom: .5rem;
+    margin-top: 0;
+}
+
+#applications h3 {
+    text-align: center;
+}
+
+#green p {
+	font-size: 16px;
+    font-weight: 400;
+    color: #666666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#green iframe {
+    margin-top: 8rem;
+}
+
+#green.schedule-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#green.schedule-info p {
+    text-align: left;
+    max-width: none;
+}
+.sponsors {
+    text-align: center;
+}
+
+.sponsors img {
+    width: 100%;
+}
+
+#adobe-sponsor {
+        max-width: 150px;
+}
+
+/* Skills */
+#skills {
+	background-color: #4e4e4e;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#skills h3 {
+	color: white;
+}
+
+#skills p {
+	color: white;
+	font-weight: 400;
+}
+
+/* Social Links */
+#social {
+	width: 100%;
+	padding-top: 8rem;
+	padding-bottom: 8rem;
+    background: #202020;
+}
+
+#social i {
+	font-size: 32px;
+	color: #664fc9;
+    margin-right: 10px;
+}
+
+#social i:hover {
+	color: #5b49c4;
+}
+
+#social .col-md-3 {
+	padding:30px;
+}
+
+#f-logo {
+    width: 50%;
+    max-width: 100px;
+}
+
+#f-links {
+    margin: 30px 0;
+}
+
+#f-links a {
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    color: #ffffff;
+    margin-bottom: 10px;
+    font-family: 'Jaldi', sans-serif;
+}
+
+#f-links a:hover {
+    color: #664fc9;
+}
+
+/* Footer */
+#f {
+	padding-top: 20px;
+	background-color: #74cfae;
+}
+
+#f p {
+	color: white;
+	text-align: right;
+	font-weight: 400;
+    
+}
+
+#copyright {
+    color: #fff;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+/* Image Opacity */
+#applications {
+    background: #efefef;
+    padding: 8rem 0;
+}
+
+#applications p {
+    font-weight: 400;
+    color: #666666;
+    text-align:center;
+    
+}
+
+
+#applications.about-applications h3 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+#applications.about-applications .grid.section-title h3 {
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+#applications.about-applications .grid {
+   
+    margin-bottom: 80px;
+}
+
+
+#applications.about-applications .img-wrapper {
+    max-width: none;
+    
+}
+
+.about-applications .grid img {
+    height: auto;
+    width: 100%;
+    max-height: 120px;
+}
+
+.about-applications .img-wrapper {
+    height: auto;
+}
+
+.about-applications .img-wrapper #glasses {
+    max-width: 140px;
+}
+
+.about-applications .img-wrapper #note {
+    max-height: 80px;
+}
+
+#sign-up {
+    text-align: center;
+    padding: 8rem 0;
+}
+
+#sign-up h3 {
+    color: #664fc9;
+	font-weight: 400;
+	margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sign-up p {
+    font-weight: 700;
+}
+
+.img-wrapper {
+   height: 93px;
+}
+
+#applications.about-applications .grid p, #applications.about-applications .grid h4 {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    
+} 
+
+#applications.about-applications .grid h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    color: #202020;
+}
+
+.grid h3 {
+    font-weight: 400;
+	margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem;
+}
+
+.grid p {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.grid p:last-child {
+    margin-bottom: 80px;
+}
+.grid img {
+    height: 93px;
+}
+
+.silver-sponsors img {
+    width: 125px;
+}
+
+.silver-sponsors h3 {
+    margin-top: 6rem;
+}
+
+
+@media (min-width: 992px){
+    
+    #f-links {
+        margin-top: 0;
+    }
+    #f-links a {
+        text-align: left;
+        margin-left: 4%;
+    }
+    
+    #f-social {
+        text-align: left;
+    }
+    
+    #green.about-green p, #green.about-green h3 {
+    text-align: left;
+}
+    #green iframe {
+    margin-top: 0;
+}
+    #applications.about-applications h3 {
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+   #applications.about-applications .grid p, #applications.about-applications .grid h4 {
+    text-align: left;
+    
+} 
+    
+#aiga-logo {
+    margin-top: 40px;
+}
+
+    
+    
+    
+}
