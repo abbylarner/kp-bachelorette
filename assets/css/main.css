@@ -109,10 +109,13 @@ hr {
     font-size: 14px;
     padding-top: 15px;
     padding-bottom: 15px;
-    background-color: transparent;
-    border: none;
+    background-color: #fff;
+    border-bottom: 3px dotted #71eadb;
     margin-bottom: 0;
+    text-align: center
 }
+
+
 
 .navbar-default .navbar-nav>.active>a {
     color: rgba(0, 0, 0, 0.65);
@@ -120,6 +123,8 @@ hr {
     border: 2px solid rgba(0, 0, 0, 0.65);
     text-transform: uppercase;
     padding: 10px 25px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
@@ -148,8 +153,16 @@ hr {
     border-color: rgba(0, 0, 0, 0.65);
 }
 
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background: transparent;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
     background-color: rgba(0, 0, 0, 0.65);
+}
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: 3px dotted #71eadb;
 }
 
 .btn-theme {
@@ -280,6 +293,7 @@ hr {
 .border-zag {
     height: 2rem;
     background: url(../img/zig-zag.svg) repeat-x;
+    background-position: bottom;
 }
 
 .border-zag.top {
@@ -293,7 +307,7 @@ hr {
     clear: both;
     background: #eb2d67;
     background: repeating-linear-gradient( 45deg, #df2a62, #df2a62 50px, #eb2d67 50px, #eb2d67 90px);
-    padding: 8rem;
+    padding: 2rem;
 }
 
 #schedule h3 {
@@ -348,7 +362,6 @@ hr {
     font-weight: bold;
     letter-spacing: 1px;
     color: #eb2d67;
-    width: 48%;
     display: block;
     margin-bottom: 20px;
 }
@@ -369,23 +382,44 @@ hr {
     background: url(../img/cancun.jpg) 0 0 no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    background-position: 36%;
 }
 
 @media (min-width: 768px) {
-    .rsvp-btn a {
-        display: inline-block;
-        width: 48%;
-        margin-bottom: 0;
-    }
     .rsvp-btn a:last-child {
         margin-left: 2%;
     }
     .rsvp-btn {
         clear: both;
     }
+    .rsvp-btn a {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 0;
+    }
+    
+    .navbar {
+    text-align: left
+}
+    .navbar-default .navbar-nav>.active>a {
+    width: 100%;
+}
+    
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-top: none;
+}
+    
 }
 
+
+
+
 @media (min-width: 992px) {
+    .rsvp-btn a {
+        display: inline-block;
+        width: 48%;
+        margin-bottom: 0;
+    }
     .sched-item {
         text-align: left;
     }
@@ -403,4 +437,11 @@ hr {
     .rsvp-btn {
         clear: both;
     }
+    #schedule {
+        padding: 8rem;
+    }
+    
+.navbar-default .navbar-nav>.active>a {
+    width: 100%;
+}
 }
