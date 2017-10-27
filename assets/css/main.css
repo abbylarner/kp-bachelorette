@@ -115,8 +115,6 @@ hr {
     text-align: center
 }
 
-
-
 .navbar-default .navbar-nav>.active>a {
     color: rgba(0, 0, 0, 0.65);
     background-color: transparent;
@@ -153,7 +151,8 @@ hr {
     border-color: rgba(0, 0, 0, 0.65);
 }
 
-.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
     background: transparent;
 }
 
@@ -161,7 +160,8 @@ hr {
     background-color: rgba(0, 0, 0, 0.65);
 }
 
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
     border-top: 3px dotted #71eadb;
 }
 
@@ -380,7 +380,6 @@ hr {
 .cancun-img {
     padding: 300px 0;
     background: url(../img/cancun.jpg) 0 0 no-repeat;
-    background-attachment: fixed;
     background-size: cover;
     background-position: 36%;
 }
@@ -397,22 +396,20 @@ hr {
         width: 48%;
         margin-bottom: 0;
     }
-    
     .navbar {
-    text-align: left
-}
+        text-align: left
+    }
     .navbar-default .navbar-nav>.active>a {
-    width: 100%;
+        width: 100%;
+    }
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-top: none;
+    }
+    .cancun-img {
+        background-attachment: fixed;
+    }
 }
-    
-    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border-top: none;
-}
-    
-}
-
-
-
 
 @media (min-width: 992px) {
     .rsvp-btn a {
@@ -440,8 +437,7 @@ hr {
     #schedule {
         padding: 8rem;
     }
-    
-.navbar-default .navbar-nav>.active>a {
-    width: 100%;
-}
+    .navbar-default .navbar-nav>.active>a {
+        width: 100%;
+    }
 }
