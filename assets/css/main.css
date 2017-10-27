@@ -381,8 +381,7 @@ hr {
     padding: 300px 0;
     background: url(../img/cancun.jpg) 0 0 no-repeat;
     background-size: cover;
-    background-size:100%;
-    width:100%;
+    background-position: 36%;
 }
 
 @media (min-width: 768px) {
